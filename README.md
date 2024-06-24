@@ -21,3 +21,13 @@
 
 ## So why does the mute/screen mirroring toggle stay at the top and refuse to move down?
 Due to changes of the control center in iOS 17, the toggle will now stay at the top. I'm not sure why this is happening however.
+
+## How do I make my own layouts?
+First, I recommend installing the All Toggles theme into your device.
+
+**Important things to know**
+- Creating custom layouts is possible, but once you delete something, it will NOT come back.
+- When you delete control center elements that don't have an icon, they will go back to their original placement.
+- Keep in mind of the issue in iOS 17 where the mute toggle/slient switch stays where it is at.
+
+To create a layout, go to Settings > Control Center. Experiment and move things around. Deleting elements without an icon can cause very unique layouts. If you'd like to extract the file so others can back up your customization, do it through iTunes. Once done, I recommend using something like iBackupBot to extract the file. The path is HomeDomain/Library/ControlCeneter.
