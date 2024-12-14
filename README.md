@@ -1,33 +1,27 @@
-# Cowabunga Lite Control Center Configurations
-## For iOS 17.x ONLY, might work on 16.x and 15.x but I haven't tested.
+# Custom Control Center configurations for [Cowabunga Lite](https://cowabun.ga)
+**These configurations were made for iOS 17.x and earlier.** With these configurations, you can customize your Control Center without any exploits or extra tweaks. The configurations available work around a bug that causes every module to be shifted down below where it use to be.
 
-**On iOS 17, changing the control center layout is possible with Cowabunga Lite. However, there are two problems. One, it only works on Macs, and two, there is a bug which moves the Screen Mirroring toggle to the middle, causing the rest of the layout to be pushed down. However, I have figured out how to fix both of these issues. (on some layouts, because I've added new ones.)**
+# How do I use these configurations?
+## On Windows
 
-## Tutorial (Windows Only):
-
-1. Make sure you have Cowabunga Lite installed and your device is ready.
-2. Open File Explorer and type in the directory “%APPDATA%/CowabungaLite/Workspace”
-3. Locate the UDID of your device and click on the “SkipSetup” folder
-4. Create a new folder called “HomeDomain” and open it.
-5. Create a new folder called “Library” and open it.
-6. Create a new folder called “ControlCenter” and open it.
-7. Import the ModuleConfiguration file into the folder (the files are found in this repo).
+1. Open File Explorer and type in the directory “%APPDATA%/CowabungaLite/Workspace”
+2. Locate the UDID of your device and click on the “SkipSetup” folder
+3. Create a new folder called “HomeDomain”.
+4. In the new folder, create another folder called “Library”.
+5. In the new folder, create another folder called “ControlCenter".
+7. Copy/Drag the ModuleConfiguration file into the folder.
 8. Open Cowabunga Lite, make sure “Skip Setup” is checked and click the “Apply” button.
 
-## Important Information
+## On Mac
+1. Import the Cowoperation into "Custom Operations" and enable it.
+2. Click the "Apply" button.
+
+*** 
+
+## What's the bug?
+* On most iPhones, the "Screen Mirroring" toggle will refuse to move to the bottom. The same will happen with the "Mute" option on iPads and any device with an action button.
+* The other issue is that the modules will be moved to the bottom and a blank space will occur above, presumably because the modules were never meant to be moved in the first place.
+* **This is why all configurations have been made with these issues in mind, and have been created to evade the issue.**
+
+## Settings App Warning
 **Do not attempt to move around or delete any modules in the settings app unless you know what you are doing.** Once you delete a module, you cannot add it back unless you repeat the steps again. This is not my fault. It's the behavior of the settings app that causes it to not reappear after being deleted in the settings pane.
-
-**Cowabunga Lite (by leminlimez):** https://github.com/Avangelista/CowabungaLiteWindows
-
-## So why does the mute/screen mirroring toggle stay at the top and refuse to move down?
-Due to changes of the control center in iOS 17, the toggle will now stay at the top. I'm not sure why this is happening however.
-
-## How do I make my own layouts?
-First, I recommend installing the All Toggles theme into your device.
-
-**Important things to know**
-- Creating custom layouts is possible, but once you delete something, it will NOT come back.
-- When you delete control center elements that don't have an icon, they will go back to their original placement.
-- Keep in mind of the issue in iOS 17 where the mute toggle/slient switch stays where it is at.
-
-To create a layout, go to Settings > Control Center. Experiment and move things around. Deleting elements without an icon can cause very unique layouts. If you'd like to extract the file so others can back up your customization, do it through iTunes. Once done, I recommend using something like iBackupBot to extract the file. The path is HomeDomain/Library/ControlCeneter.
